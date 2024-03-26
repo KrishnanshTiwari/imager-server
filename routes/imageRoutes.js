@@ -7,7 +7,7 @@ dotenv.config();
 const router = express.Router();
 
 const replicate = new Replicate({
-  auth: "r8_WvvnQJxuSpyUyFlnY35Z0yCHcChctYh4ENCKh",
+  auth: process.env.REPLICATE_KEY,
 });
 
 router.route("/").get((req, res) => {
